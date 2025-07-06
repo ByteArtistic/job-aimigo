@@ -1,0 +1,209 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f3f5;
+    background-image: url('bg7.jpg');
+    background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Optional, for full coverage */
+  }
+  .title {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 5rem;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  /* Glow animation keyframes */
+  @keyframes glow {
+    from {
+      text-shadow:
+        0 0 5px #008080,
+        0 0 10px #00a3a3,
+        0 0 15px #006666,
+        0 0 20px #33cccc;
+    }
+    to {
+      text-shadow:
+        0 0 10px #91dbe7,
+        0 0 20px #76cee4,
+        0 0 30px #5fc6dd,
+        0 0 40px #2cdbe4;
+    }
+  }
+
+
+  .main-box p,
+  .main-box button {
+      /* display: block; */
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+
+
+
+  .character-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      /* spacing between items */
+      padding: 20px;
+      font-size: 2.0rem;
+      color: #f9f6f6;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    text-shadow: 5px 5px 5px rgba(78, 76, 76, 0.3);
+    font-weight: bold; }
+
+    .character-banner{
+        margin: 40px auto;margin: 40px auto;
+        border: 3px solid #f4f9f9;
+        width: fit-content;
+        border-radius: 100px;
+        box-shadow: 8px 8px 12px rgba(0, 128, 128, 0.3);
+        display: flex;
+        align-items: center;
+    }
+
+          .character-img {
+              width: 60px;
+              /* adjust size as needed */
+              height: auto;     }
+
+    .main-box{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            /* spacing between items */
+            padding: 20px;
+            font-size: 1.0rem;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+            margin: 40px auto;
+                margin: 40px auto;
+                /* border: 3px solid #f4f9f9; */
+                width: fit-content;
+                /* border-radius: 100px; */
+                background-color: rgba(0, 0, 0, 0.5);
+                
+                box-shadow: 8px 8px 12px rgba(0, 128, 128, 0.6);
+                display: flex;
+                align-items: center;
+
+    }
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #5ec3ff, #84d0ff);
+    padding: 10px 20px;
+    color: white;
+  }
+
+  .logo {
+    max-width: 120px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .characters {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .character {
+    height: 120px;
+  }
+
+  .dialogue-box {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+  }
+
+  .progress-container {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    height: 20px;
+  }
+
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+  }
+
+  #continueBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    background-color: #42a5f5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #continueBtn:active {
+    background-color: #1e88e5;
+  }
+
+  #exitBtn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Modal */
+  .modal.hidden {
+    display: none;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
